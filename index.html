@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Funrunners Baseball — The Future of Global Baseball Auctions</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="A next-generation platform connecting international baseball teams, players, and auctions in one dynamic ecosystem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">⚾</span>
+        <span class="brand-name">FUN<span class="text-gold-gradient">RUNNERS</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#how" data-i18n="nav.how">How It Works</a>
+        <a href="#teams" data-i18n="nav.teams">Teams</a>
+        <a href="#auction" data-i18n="nav.auction">Auction</a>
+        <a href="#why" data-i18n="nav.why">Why Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+            <i class="icon-globe" aria-hidden="true"></i>
+            <span class="lang-current"><span class="flag">🇺🇸</span> English</span>
+            <i class="icon-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+            <li><button data-code="en" data-flag="🇺🇸" data-label="English"><span>🇺🇸 English</span><i class="check"></i></button></li>
+            <li><button data-code="es" data-flag="🇪🇸" data-label="Español"><span>🇪🇸 Español</span><i class="check"></i></button></li>
+            <li><button data-code="bn" data-flag="🇧🇩" data-label="বাংলা"><span>🇧🇩 বাংলা</span><i class="check"></i></button></li>
+            <li><button data-code="hi" data-flag="🇮🇳" data-label="हिन्दी"><span>🇮🇳 हिन्दी</span><i class="check"></i></button></li>
+            <li><button data-code="ja" data-flag="🇯🇵" data-label="日本語"><span>🇯🇵 日本語</span><i class="check"></i></button></li>
+            <li><button data-code="ko" data-flag="🇰🇷" data-label="한국어"><span>🇰🇷 한국어</span><i class="check"></i></button></li>
+            <li><button data-code="pt" data-flag="🇧🇷" data-label="Português"><span>🇧🇷 Português</span><i class="check"></i></button></li>
+            <li><button data-code="fr" data-flag="🇫🇷" data-label="Français"><span>🇫🇷 Français</span><i class="check"></i></button></li>
+            <li><button data-code="de" data-flag="🇩🇪" data-label="Deutsch"><span>🇩🇪 Deutsch</span><i class="check"></i></button></li>
+            <li><button data-code="it" data-flag="🇮🇹" data-label="Italiano"><span>🇮🇹 Italiano</span><i class="check"></i></button></li>
+            <li><button data-code="zh" data-flag="🇨🇳" data-label="中文"><span>🇨🇳 中文</span><i class="check"></i></button></li>
+            <li><button data-code="ar" data-flag="🇸🇦" data-label="العربية"><span>🇸🇦 العربية</span><i class="check"></i></button></li>
+            <li><button data-code="ru" data-flag="🇷🇺" data-label="Русский"><span>🇷🇺 Русский</span><i class="check"></i></button></li>
+            <li><button data-code="tr" data-flag="🇹🇷" data-label="Türkçe"><span>🇹🇷 Türkçe</span><i class="check"></i></button></li>
+            <li><button data-code="ur" data-flag="🇵🇰" data-label="اردو"><span>🇵🇰 اردو</span><i class="check"></i></button></li>
+            <li><button data-code="id" data-flag="🇮🇩" data-label="Indonesia"><span>🇮🇩 Indonesia</span><i class="check"></i></button></li>
+            <li><button data-code="vi" data-flag="🇻🇳" data-label="Tiếng Việt"><span>🇻🇳 Tiếng Việt</span><i class="check"></i></button></li>
+            <li><button data-code="th" data-flag="🇹🇭" data-label="ไทย"><span>🇹🇭 ไทย</span><i class="check"></i></button></li>
+            <li><button data-code="nl" data-flag="🇳🇱" data-label="Nederlands"><span>🇳🇱 Nederlands</span><i class="check"></i></button></li>
+            <li><button data-code="pl" data-flag="🇵🇱" data-label="Polski"><span>🇵🇱 Polski</span><i class="check"></i></button></li>
+          </ul>
+        </div>
+
+        <a href="#auction" class="btn-ghost-gold hide-on-xs" data-i18n="nav.cta">Enter Platform</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-stadium.jpg" alt="Cinematic baseball stadium at golden hour" />
+      <div class="hero-overlay-1"></div>
+      <div class="hero-overlay-2"></div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+        <span><span class="dot"></span> <span data-i18n="marquee">Global Baseball Auction System — Live Now</span></span>
+      </div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="badge-pill reveal">
+        <span class="dot"></span> <span data-i18n="hero.badge">Coming Soon · Live Auctions</span>
+      </div>
+      <h1 class="hero-title reveal" style="--d:.1s">
+        <span data-i18n="hero.title1">The Future of</span> <br />
+        <span class="text-gold-gradient" data-i18n="hero.title2">Global Baseball</span><br />
+        <span data-i18n="hero.title3">Auctions</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:.25s" data-i18n="hero.sub">
+        A next-generation platform connecting international baseball teams, players, and
+        auctions in one dynamic ecosystem. Discover live team auctions, competitive bidding,
+        and global franchises — all in one place.
+      </p>
+      <div class="hero-cta reveal" style="--d:.4s">
+        <a href="#auction" class="btn btn-hero btn-xl">
+          <i class="icon-rocket"></i> <span data-i18n="hero.cta1">Explore Auctions</span>
+        </a>
+        <a href="#redirect" class="btn btn-shipping btn-xl">
+          <i class="icon-link"></i> <span data-i18n="hero.cta2">Go to Shipping Baseball</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div><div class="stat-v text-gold-gradient">12+</div><div class="stat-l" data-i18n="hero.stat1">Countries</div></div>
+        <div><div class="stat-v text-gold-gradient" data-i18n="hero.statv2">Live</div><div class="stat-l" data-i18n="hero.stat2">Bidding</div></div>
+        <div><div class="stat-v text-gold-gradient">24/7</div><div class="stat-l" data-i18n="hero.stat3">Global Platform</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+        <h2 class="h2"><span data-i18n="about.h1">About</span> <span class="text-gold-gradient">Funrunners Baseball</span></h2>
+        <p class="lead" data-i18n="about.lead">
+          Funrunners Baseball is a global platform designed to bring innovation to baseball
+          franchise auctions and international team development. We connect teams, investors,
+          and fans through a structured and transparent auction system that brings the sport
+          to a global stage.
+        </p>
+        <div class="info-grid">
+          <div class="info-card"><div class="info-k" data-i18n="about.k1">Transparent</div><div class="info-v" data-i18n="about.v1">Auction process</div></div>
+          <div class="info-card"><div class="info-k" data-i18n="about.k2">Global</div><div class="info-v" data-i18n="about.v2">Talent pools</div></div>
+          <div class="info-card"><div class="info-k" data-i18n="about.k3">Real-time</div><div class="info-v" data-i18n="about.v3">Bidding system</div></div>
+          <div class="info-card"><div class="info-k" data-i18n="about.k4">Premium</div><div class="info-v" data-i18n="about.v4">Franchise access</div></div>
+        </div>
+      </div>
+      <div class="about-img-wrap reveal">
+        <div class="about-img-glow"></div>
+        <img src="assets/global-network.jpg" alt="Global baseball network" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="how.eyebrow">Process</span>
+        <h2 class="h2"><span data-i18n="how.h1">How It</span> <span class="text-gold-gradient" data-i18n="how.h2">Works</span></h2>
+      </div>
+      <div class="grid-3">
+        <div class="feature-card reveal">
+          <div class="card-bg-num">01</div>
+          <div class="card-icon"><i class="icon-search"></i></div>
+          <h3 data-i18n="how.t1">Discover Teams</h3>
+          <p data-i18n="how.p1">Browse available international baseball franchises with full stats and regional context.</p>
+        </div>
+        <div class="feature-card reveal" style="--d:.1s">
+          <div class="card-bg-num">02</div>
+          <div class="card-icon"><i class="icon-gavel"></i></div>
+          <h3 data-i18n="how.t2">Participate in Auction</h3>
+          <p data-i18n="how.p2">Join live bidding for teams and ownership opportunities in a transparent marketplace.</p>
+        </div>
+        <div class="feature-card reveal" style="--d:.2s">
+          <div class="card-bg-num">03</div>
+          <div class="card-icon"><i class="icon-trophy"></i></div>
+          <h3 data-i18n="how.t3">Build & Compete</h3>
+          <p data-i18n="how.p3">Manage your roster, develop talent, and compete on the global baseball stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAMS ===================== -->
+  <section id="teams" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="teams.eyebrow">Roster</span>
+        <h2 class="h2"><span data-i18n="teams.h1">Featured</span> <span class="text-gold-gradient" data-i18n="teams.h2">International Teams</span></h2>
+        <p class="section-sub" data-i18n="teams.sub">Meet the franchises shaping the next era of global baseball.</p>
+      </div>
+      <div class="grid-4">
+        <article class="team-card reveal">
+          <div class="flag">🇳🇮</div>
+          <span class="tag" data-i18n="teams.tag1">Power Hitters</span>
+          <h3 data-i18n="teams.n1">Nicaragua Stallions</h3>
+          <p data-i18n="teams.d1">Power, speed, and rising talent from Central America.</p>
+          <button class="link-btn"><span data-i18n="teams.view">View Details</span> <i class="icon-arrow-right"></i></button>
+        </article>
+        <article class="team-card reveal" style="--d:.1s">
+          <div class="flag">🇨🇴</div>
+          <span class="tag" data-i18n="teams.tag2">Defensive Wall</span>
+          <h3 data-i18n="teams.n2">Bogota Bulls</h3>
+          <p data-i18n="teams.d2">Aggressive gameplay with strong defensive strategy.</p>
+          <button class="link-btn"><span data-i18n="teams.view">View Details</span> <i class="icon-arrow-right"></i></button>
+        </article>
+        <article class="team-card reveal" style="--d:.2s">
+          <div class="flag">🇦🇷</div>
+          <span class="tag" data-i18n="teams.tag3">Elite Pitching</span>
+          <h3 data-i18n="teams.n3">Argentina Angels</h3>
+          <p data-i18n="teams.d3">Precision-focused team with elite pitching lineup.</p>
+          <button class="link-btn"><span data-i18n="teams.view">View Details</span> <i class="icon-arrow-right"></i></button>
+        </article>
+        <article class="team-card reveal" style="--d:.3s">
+          <div class="flag">🌎</div>
+          <span class="tag" data-i18n="teams.tag4">Speed Squad</span>
+          <h3 data-i18n="teams.n4">Caribbean Cyclones</h3>
+          <p data-i18n="teams.d4">Fast-paced, high-energy competitive squad.</p>
+          <button class="link-btn"><span data-i18n="teams.view">View Details</span> <i class="icon-arrow-right"></i></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AUCTION ===================== -->
+  <section id="auction" class="section section-alt auction-section">
+    <div class="auction-glow"></div>
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="auc.eyebrow">Live Auction</span>
+        <h2 class="h2"><span data-i18n="auc.h1">Live Auction</span> <span class="text-gold-gradient" data-i18n="auc.h2">Preview</span></h2>
+        <p class="lead" data-i18n="auc.lead">
+          Get ready for competitive bidding on exclusive baseball franchises. Each team comes
+          with unique stats, region-based talent pools, and ownership opportunities.
+        </p>
+        <ul class="auction-points">
+          <li><span class="ap-icon"><i class="icon-zap"></i></span><span data-i18n="auc.p1">Real-time bidding system</span></li>
+          <li><span class="ap-icon"><i class="icon-globe"></i></span><span data-i18n="auc.p2">Global team ownership</span></li>
+          <li><span class="ap-icon"><i class="icon-shield"></i></span><span data-i18n="auc.p3">Transparent auction process</span></li>
+          <li><span class="ap-icon"><i class="icon-lock"></i></span><span data-i18n="auc.p4">Limited franchise availability</span></li>
+        </ul>
+        <a href="#redirect" class="btn btn-hero btn-lg" style="margin-top:2rem">
+          <span data-i18n="auc.cta">Go to Full Auction Platform</span> <i class="icon-external"></i>
+        </a>
+      </div>
+
+      <!-- Live Auction Card -->
+      <div class="auction-card-wrap reveal">
+        <div class="auction-card-glow"></div>
+        <div class="auction-card">
+          <div class="auction-card-head">
+            <div class="live-tag"><span class="live-dot"></span> <span data-i18n="auc.live">Live Now</span></div>
+            <span class="lot" data-i18n="auc.lot">Lot #042</span>
+          </div>
+          <div class="auction-row">
+            <div>
+              <div class="big-flag">🇳🇮</div>
+              <h3 class="team-name" data-i18n="teams.n1">Nicaragua Stallions</h3>
+            </div>
+            <div class="bid-block">
+              <div class="bid-label" data-i18n="auc.curbid">Current Bid</div>
+              <div class="bid-amount text-gold-gradient" id="bidAmount">$2.45M</div>
+            </div>
+          </div>
+          <div class="auction-stats">
+            <div class="stat-cell"><div class="sv" id="bidders">27</div><div class="sl" data-i18n="auc.bidders">Bidders</div></div>
+            <div class="stat-cell"><div class="sv" id="timeLeft">04:12</div><div class="sl" data-i18n="auc.timeleft">Time Left</div></div>
+            <div class="stat-cell"><div class="sv">$50K</div><div class="sl" data-i18n="auc.inc">Increment</div></div>
+          </div>
+          <button class="btn btn-hero btn-lg btn-full" id="placeBid">
+            <span data-i18n="auc.place">Place Bid</span><span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY ===================== -->
+  <section id="why" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="why.eyebrow">Advantage</span>
+        <h2 class="h2"><span data-i18n="why.h1">Why</span> <span class="text-gold-gradient">Funrunners</span> <span data-i18n="why.h2">Baseball?</span></h2>
+      </div>
+      <div class="grid-4">
+        <div class="why-card reveal">
+          <div class="why-icon"><i class="icon-globe"></i></div>
+          <h3 data-i18n="why.t1">Global Ecosystem</h3>
+          <p data-i18n="why.p1">Connecting teams across continents.</p>
+        </div>
+        <div class="why-card reveal" style="--d:.1s">
+          <div class="why-icon"><i class="icon-zap"></i></div>
+          <h3 data-i18n="why.t2">Fast & Transparent</h3>
+          <p data-i18n="why.p2">Real-time, fair auction system.</p>
+        </div>
+        <div class="why-card reveal" style="--d:.2s">
+          <div class="why-icon"><i class="icon-brain"></i></div>
+          <h3 data-i18n="why.t3">Smart Management</h3>
+          <p data-i18n="why.p3">Structured team operations toolkit.</p>
+        </div>
+        <div class="why-card reveal" style="--d:.3s">
+          <div class="why-icon"><i class="icon-trending"></i></div>
+          <h3 data-i18n="why.t4">Investment-Driven</h3>
+          <p data-i18n="why.p4">A modern sports investment model.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REDIRECT ===================== -->
+  <section id="redirect" class="section">
+    <div class="container redirect-wrap">
+      <div class="redirect-card reveal">
+        <img src="assets/redirect-bg.jpg" alt="Stadium under floodlights" class="redirect-bg" loading="lazy" />
+        <div class="redirect-overlay"></div>
+        <div class="redirect-glow"></div>
+        <span class="eyebrow" data-i18n="rd.eyebrow">Main Platform</span>
+        <h2 class="h2"><span data-i18n="rd.h1">Explore the</span> <span class="text-gold-gradient" data-i18n="rd.h2">Full Experience</span></h2>
+        <p class="lead center" data-i18n="rd.lead">
+          This landing page is your starting point. To access full auctions, live bidding, and
+          complete team management tools, visit our main platform.
+        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-xl" style="margin-top:2.5rem">
+          <span data-i18n="rd.cta">Enter Shipping Baseball Platform</span> <i class="icon-external"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-col-wide">
+        <div class="brand">
+          <span class="brand-mark">⚾</span>
+          <span class="brand-name">FUN<span class="text-gold-gradient">RUNNERS</span></span>
+        </div>
+        <p class="footer-about" data-i18n="ft.about">
+          The future of global baseball auctions — connecting international teams, players,
+          and investors in one dynamic ecosystem.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ft.platform">Platform</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#auction" data-i18n="ft.auctions">Auctions</a></li>
+          <li><a href="#teams" data-i18n="nav.teams">Teams</a></li>
+          <li><a href="#why" data-i18n="nav.why">Why Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ft.contact">Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@funrunners.baseball" class="mail-link"><i class="icon-mail"></i> hello@funrunners.baseball</a></li>
+          <li><a href="#" data-i18n="ft.privacy">Privacy Policy</a></li>
+          <li><a href="#" data-i18n="ft.terms">Terms</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Twitter" class="soc soc-twitter"><i class="icon-twitter"></i></a>
+          <a href="#" aria-label="Instagram" class="soc soc-instagram"><i class="icon-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="soc soc-facebook"><i class="icon-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> <span data-i18n="ft.rights">Funrunners Baseball || Developed By WebDevTaslima || All rights reserved.</span></p>
+      <p data-i18n="ft.tag">Crafted for the global game.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
